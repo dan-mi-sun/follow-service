@@ -23,7 +23,34 @@ describe "FollowService" do
 
     it "should store the follow in the database" do
       expect(Follow.count).to eq(1)
-      expect(User.count).to eq(2)
     end
   end
+
+  describe "GET to /users/:id/follows" do 
+    before do
+      @lianne = User.create!
+      stephen_fry = User.create!
+
+      Follow.create!(:followed_id => stephen_fry.id, :follower_id => @lianne.id)
+
+      get "/users/#{stephen_fry.id}/followers"
+    end
+
+    it "should return a 200" do
+      expect(last_response.status).to eq(200)
+    end
+
+    it "should return content type of application/json" do
+      expect(last_response.content_type).to eq("application/json")
+    end
+
+    it "should return a valid JSON string with all the followers" do
+      expect(proc { 
+        user_json = JSON(last_response.body) 
+        expect(user_json).to eq( [{ "id" => @lianne.id }] )
+      }).to_not raise_error
+    end
+
+  end
+
 end

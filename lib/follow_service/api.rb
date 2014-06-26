@@ -15,3 +15,8 @@ post '/users/:id/follows' do
   
   [201, {'Content-Type' => 'application/json'}, follow.to_json]
 end
+
+get '/users/:id/followers' do
+  content_type :json
+  User.find(params[:id]).followers.to_json
+end
