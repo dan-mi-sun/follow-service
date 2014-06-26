@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "follow_service"
   gem.homepage = "http://github.com/dan-mi-sun/follow_service"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A user follow service}
+  gem.description = %Q{A JSON based RESTful API for following users}
   gem.email = "dan.mi.sun@gmail.com"
   gem.authors = ["Daniel Sun"]
   # dependencies defined in Gemfile
