@@ -1,19 +1,29 @@
-= follow_service
+# We Got Coders Week 9-10 Coursework 
 
-Description goes here.
+We Got Coders is a consultancy that provides experts in agile web development, specialising in Ruby technology.
 
-== Contributing to follow_service
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+wegotcoders.com/
 
-== Copyright
+## Sinatra follow-service
+In this course work we learnt how to build a RESTful JSON API in Sinatra using the Jeweler gem.
 
-Copyright (c) 2014 Daniel Sun. See LICENSE.txt for
-further details.
+The follow-service Gem allows users within the Backbone portfolio to follow eachother.
 
+## Backbone Portfolio
+
+https://github.com/dan-mi-sun/backbone-portfolio/blob/master/README.md
+
+Using Jasmine TDD we built a front-end rich client experience, that builds an on-line work portfolio. 
+
+## Brief
+
+You can find the brief for this project here:
+
+https://github.com/dan-mi-sun/backbone-portfolio/blob/master/BRIEF.md
+
+## Key Technologies and Techniques:
+- Jasmine TDD
+- Backbone 
+- Rails
+- Following gem built in Sinatra
+- OAuth logins with Github
