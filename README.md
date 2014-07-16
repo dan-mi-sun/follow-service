@@ -2,7 +2,7 @@
 
 We Got Coders is a consultancy that provides experts in agile web development, specialising in Ruby technology.
 
-wegotcoders.com/
+http://wegotcoders.com/
 
 ## Sinatra follow-service
 In this course work we learnt how to build a RESTful JSON API in Sinatra using the Jeweler gem.
